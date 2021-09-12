@@ -1,0 +1,24 @@
+@use '../Abstract' as *;
+
+/* All elements must be set in border-box*/
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Hide cursor at body */
+body {
+    overflow: hidden;
+}
+
+/* Paragraph has 27.2px*/
+p {
+    line-height: 1.7em;
+}
+
+/* Image settings */
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}

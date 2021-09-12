@@ -1,0 +1,56 @@
+@use './Abstract' as *;
+
+/* Button style for slide details */
+.fa-angle-double-left {
+    color: var(--clr-primary-300);
+    font-size: 2rem;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slideL .5s ease infinite alternate-reverse;
+    opacity: .5;
+
+    @keyframes slideL {
+        0% {
+            right: 4%;
+        }
+        100% {
+            right: 5%;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+/* Paging Style */
+.swiper-pagination {
+    bottom: 4% !important;
+
+    span {
+        background-color: hsl(34, 100%, 10%);
+    }
+    .swiper-pagination-bullet-active {
+        @include neon-glow(34, 100%, 50%);
+        width: 3rem;
+        height: 5px;
+        border-radius: 8px;
+        transition: width 1s ease;
+    }
+}
+
+/* Button style for prev and next */
+.swiper .swiper-button {
+    font-weight: 900;
+    color: hsl(34, 100%, 50%);
+
+    &-prev {
+        left: 2%;
+        
+    }
+    &-next {
+        right: 2%;
+    }
+}

@@ -1,0 +1,15 @@
+@use '../Abstract' as *;
+
+:root {
+    @each $themes, $shades in $Colors {
+        @each $shade, $value in $shades {
+            --clr-#{$themes}-#{$shade}: #{$value};
+        }
+    }
+
+    @each $type, $types in $Type-scale {
+        @each $size, $value in $types {
+            --fs-#{$type}-#{$size}: #{$value};
+        }
+    }
+}

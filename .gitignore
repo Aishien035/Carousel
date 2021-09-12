@@ -1,0 +1,18 @@
+#Logs
+logs
+* .log
+npm-debug.log*
+
+#Runtime data
+pids
+*.pids
+*.seed
+
+#dependency directory
+node_modules
+
+#cache for parcel
+.cache
+
+#Apple stuff
+.DS_Store

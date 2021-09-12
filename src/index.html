@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel With Swiperjs</title>
+    <link rel="stylesheet" href="./sass/style.scss"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+</head>
+    <body>
+        
+        <!-- Slider main container -->
+            <div class="swiper mySwiper">
+
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+
+                        <!-- Slides -->
+                            <!-- <div class="swiper-slide">
+                                <i class="fas fa-angle-double-left"></i>
+                                <figure>
+                                    <img src="./images/IMG_20200311_225225.jpg" />
+                                </figure>
+
+                                <div class="swiper-details">
+                                    <i class="fas fa-angle-double-right"></i>
+                                    <h1>MRN</h1>
+                                    <h3>Web Developer</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquam totam nulla maiores mollitia hic molestiae amet harum tempora doloremque?</p>
+                                    <div class="swiper-links">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div> -->
+                    </div>
+
+                <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button"></div>
+                    <div class="swiper-button-next swiper-button"></div>
+            
+                <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+    </body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+
+    <script src="./config.js"></script>
+    <script src="./data.json"></script>
+    <script src="./app.js"></script>
+    
+    <!-- Cursor -->
+    <script>
+        new kursor({
+            type: 2,
+            removeDefaultCursor: true,
+            color: '#d9d9d9'
+        })
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          mousewheel: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 80,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+</html>

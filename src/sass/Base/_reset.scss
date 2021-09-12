@@ -1,0 +1,25 @@
+
+/* Remove the margin and padding in html & body */
+html, 
+body, 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove list style both ul and ol elements */
+ul[role='list'],
+ol[role='list'] {
+    list-style-type: none;
+}
+
+/* Remove focus style */
+a:focus,
+button:focus {
+    outline: none;
+}
+
+/* Remove underline in all links */
+a {
+    text-decoration: none;
+}

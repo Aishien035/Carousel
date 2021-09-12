@@ -1,0 +1,26 @@
+{
+  "name": "Carousel",
+  "version": "1.0.0",
+  "description": "A carouse with a swiper js framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --out-dir docs",
+    "build": "parcel build src/index.html --out-dir docs --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "sass": "^1.39.2"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "src/images"
+    ]
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
