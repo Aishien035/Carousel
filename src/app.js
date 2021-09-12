@@ -31,4 +31,4 @@ const load = document.querySelector('.load');
 
 setTimeout(function clip() {
     load.style.clipPath = 'circle(0% at 50% 50%)';
-}, 1000)
+}, 15000)
