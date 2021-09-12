@@ -5,7 +5,7 @@
     justify-self: flex-end;
     display: flex;
     gap: 1.5rem;
-    font-size: 1.3em;   
+    font-size: var(--fs-small-500);   
     background: linear-gradient(
         40deg,
         hsl(44, 99%, 73%),

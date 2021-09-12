@@ -4,6 +4,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    color: var(--clr-primary-100, hsl(0, 0%, 100%));
 }
 
 /* Hide cursor at body */
@@ -14,6 +15,13 @@ body {
 /* Paragraph has 27.2px*/
 p {
     line-height: 1.7em;
+}
+
+/* Heading 1 default */
+h1 {
+    font-size: var(--fs-big-600);
+    text-transform: uppercase;
+    letter-spacing: .3em;
 }
 
 /* Image settings */
