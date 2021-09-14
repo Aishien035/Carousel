@@ -1,3 +1,3 @@
 # Carousel
 
-# Carousel with swiper js
+# Carousel with swiper js 😉👌
