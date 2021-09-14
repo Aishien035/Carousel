@@ -1,3 +1,3 @@
 # Carousel
 
-# Carouselwith framework of swiper js
+# Carousel with swiper js
