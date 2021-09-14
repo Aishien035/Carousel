@@ -1,5 +1,6 @@
 {
-  "name": "Carousel",
+  "type": "module",
+  "name": "carousel",
   "version": "1.0.0",
   "description": "A carouse with a swiper js framework",
   "main": "index.js",

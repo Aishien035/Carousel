@@ -131,7 +131,7 @@ module.exports = [{
 }, {
   "name": "baredo",
   "role": "Web Developer",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, tempora qui. Officia optio illo fugit expedita incidunt excepturi repellat a necessitatibus, eius tenetur saepe cumque reiciendis assumenda delectus. Itaque repellat nisi tempore dolore nobis eos quo reprehenderit. Ab, provident eveniet!",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, tempora qui. Officia optio illo fugit expedita incidunt excepturi repellat a necessitatibus, eius tenetur saepe cumque reiciendis assumenda delectus.",
   "image": "https://scontent.fmnl26-1.fna.fbcdn.net/v/t1.6435-1/p320x320/150914021_1448371415370046_6319058480568475986_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeFfnimt7nLsYVYp7rNkH8AtyQMavz9qfRvJAxq_P2p9G-6_PWRtC_Jrky29Rmlg6CGV6Z9g72Lcc-SPE41pVwfT&_nc_ohc=3SFVmgVJR74AX912mp7&_nc_ht=scontent.fmnl26-1.fna&oh=9dc61202faeffc409a0cee85f5258847&oe=6161557E"
 }, {
   "name": "Navarette",
@@ -242,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51438" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53466" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
