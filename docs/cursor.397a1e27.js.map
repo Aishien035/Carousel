@@ -1,0 +1,1 @@
+{"version":3,"sources":["cursor.js"],"names":["kursor","type","removeDefaultCursor","color"],"mappings":";AAEA,IAAIA,OAAO,CACPC,KAAM,EACNC,qBAAqB,EACrBC,MAAO","file":"cursor.397a1e27.js","sourceRoot":"..\\src","sourcesContent":["\r\n//Cursor //\r\nnew kursor({\r\n    type: 2,\r\n    removeDefaultCursor: true,\r\n    color: '#d9d9d9'\r\n});"]}

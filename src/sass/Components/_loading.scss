@@ -4,18 +4,18 @@
     width: 100%;
     height: 100vh;
     position: fixed;
-    z-index: 1000;
     @include pl-flex();
     gap: 2rem;
-    clip-path: circle(100% at 50% 50%);
-    transition: all .5s ease;
     background-color: var(--clr-classic-300, hsl(0, 0%, 5%));
+    transition: all .5s ease;
+    clip-path: circle(100% at 50% 50%);
+    z-index: 1000;
 
     /* Heading in loading screen */
     h1 {
-        color: var(--clr-primary-300, #fff);
         font-size: clamp(1.40rem, 3vw, 2rem);
-        background: linear-gradient(
+        color: var(--clr-primary-300, #fff);
+        background: linear-gradient(s
             40deg,
             hsl(44, 99%, 73%),
             hsl(26, 96%, 55%),

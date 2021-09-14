@@ -17,11 +17,11 @@
                 <div class="load">
                     <h1>UNDERGROUND</h1>
                     <div class="canvas">
-                        <div class="spinner p1"></div>
-                        <div class="spinner p2"></div>
-                        <div class="spinner p3"></div>
-                        <div class="spinner p4"></div>
-                      </div>
+                        <span class="spinner p1"></span>
+                        <span class="spinner p2"></span>
+                        <span class="spinner p3"></span>
+                        <span class="spinner p4"></span>
+                    </div>
                 </div>
                 <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -46,38 +46,6 @@
     <script src="./config.js"></script>
     <script src="./data.json"></script>
     <script src="./app.js"></script>
-    
-    <!-- Cursor -->
-    <script>
-        new kursor({
-            type: 2,
-            removeDefaultCursor: true,
-            color: '#d9d9d9'
-        })
-    </script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          mousewheel: true,
-          slidesPerView: "auto",
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 90,
-            modifier: 1,
-            slideShadows: true,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        });
-    </script>
+    <script src="./cursor.js"></script>
+    <script src="./swiper.js"></script>
 </html>
